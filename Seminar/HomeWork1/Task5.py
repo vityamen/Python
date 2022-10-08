@@ -17,3 +17,5 @@ userZB = int(input("Введите Z: "))
 
 distance = GetDistanceFromCoordinate(userXA, userYA, userZA, userXB, userYB,userZB)
 print(f"Расстояние между точками A[{userXA},{userYA},{userZA}] и B[{userXB},{userYB},{userZB}] = {distance}")
+
+# тест gitа
