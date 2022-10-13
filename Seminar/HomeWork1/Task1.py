@@ -6,13 +6,13 @@
 #     - 7 -> да
 #     - 1 -> нет
 
-print('введите число N')
+print('введите число N от 1 до 7')
 N = int(input())
 
 def whichday(N):
-    if N<6 and N>1: return 'будни'
-    elif N>6 and N<8: return 'выходной'
-if whichday(N) == 'будни':
-    print('да')
-else:
-    print('нет')
+    if (0 < N < 8):
+        if (1 <= N <= 5): return 'нет'
+        elif (6 <= N < 8): return 'да'
+    else: return 'Вы ввели неверную цифру'
+
+print(whichday(N))
