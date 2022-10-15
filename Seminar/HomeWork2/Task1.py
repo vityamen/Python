@@ -4,11 +4,14 @@
 #     - 6782 -> 23
 #     - 0,56 -> 11
 
-digitsum = 0
-print('Введите вещественное число: ')
-num = str(input())
-length = int(len(num))
-for i in range(0, length):
-    digitnum = float(num[i])
-    digitsum = digitsum + digitnum
-print(digitsum)    
+def SumNum(num):
+    sum = 0
+    for i in num:
+        if i != ".":
+         sum += int(i)
+    return sum
+
+if __name__ == "__main__":
+    number = (input('Введите вещественное число: '))
+    Summ = SumNum(number)
+    print(Summ)
