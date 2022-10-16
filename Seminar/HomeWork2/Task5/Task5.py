@@ -2,10 +2,13 @@
 
 from random import randint
 
-def func():
-    list = [1,2,3,4,5,6,7,8,9,10]
+list = [1,2,3,4,5,6,7,8,9,10]
+def func(list):
+    
     res = []
+    
     for i in range (len(list)):
+        
         index = randint(0, len(list)-1)
 
         res.append(list[index])
@@ -17,4 +20,5 @@ def func():
     file.close()    
 
 if __name__ == "__main__":
-    print (func())
+    print(list)
+    print(func(list))
