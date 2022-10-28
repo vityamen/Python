@@ -32,4 +32,3 @@ for j in range(-k, 0):
         neglist.append(int(list[i]*(-1)**(j+1)))
         i -=1
 print(neglist+list)
-# Fibonachi(3)
