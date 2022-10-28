@@ -12,7 +12,7 @@ def func():
 
     for line in file:
         ln = int(line) 
-        if ln % 2 == 0:
+        if ln % 2 != 0:
             sum += ln
     print(sum)
     file.close()    

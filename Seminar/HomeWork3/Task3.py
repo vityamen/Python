@@ -12,30 +12,35 @@ from operator import length_hint
 def AddList():
     N = (int(input('Введите размер списка: ')))
     list = []
+    lstfrac = []
 
     for i in range(N):
         list.append(round(random.uniform(1,10), 2))
-    return list
+        lstfrac.append(round((list[i])*100%100))
+    print(list)
+    return lstfrac
 
-def MinMax(list):
+def MinMax(lstfrac):
 
-    length = length_hint(list)   
-    max = list[0]
-
+    length = length_hint(lstfrac)   
+    max = int(list[0])
     for i in range(length):
-        if list[i] > max:
-            max = list[i]
+        if lstfrac[i] > max:
+            max = lstfrac[i]
 
     i = 0
-    min = list[0]
+    min = lstfrac[0]
     for i in range(length):    
-        if list[i] > min:
+        if lstfrac[i] > min:
             i+1
-        else: min = list[i]
-  
-    print(f'Максимальный элемент = {max}')
-    print(f'Минимальный элемент = {min}')
-    result = (round((max*100%100-min*100%100), 0))/100
+        else: min = lstfrac[i]
+    print(f'Максимальное значение дробной части= {max}')
+    print(f'Минимальное значение дробной части= {min}')
+
+    if max > min:
+        result = max-min
+    else:
+        result = min-max
 
     return result
 
