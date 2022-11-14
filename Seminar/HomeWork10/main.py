@@ -5,7 +5,6 @@ import handlers
 async def on_startup(_):
     print('I see you!')
 
-
 async def main():
     await dp.start_polling(bot)
 
