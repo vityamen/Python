@@ -4,8 +4,8 @@ from bot_command import hello
 
 from bot_command import calculater
 
-app = ApplicationBuilder().token("токен").build()
-app.add_handler(CommandHandler("hello", hello)))
+app = ApplicationBuilder().token("Token").build()
+app.add_handler(CommandHandler("hello", hello))
 app.add_handler(CommandHandler('go', calculater))
 print('server start)')
 
