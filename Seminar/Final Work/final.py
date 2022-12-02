@@ -13,4 +13,5 @@ def print_graph():
     plt.savefig('graph.png')
     plt.show()
 
+
 print_graph()
